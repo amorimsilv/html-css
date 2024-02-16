@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*      SELETORES PERSONALIZADOS
+            #   = id
+            .   = class
+            :   = pseudo-class
+            ::   = pseudo-elementos
+            >   = children (filho)
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none; /* (Caso queira tirar o sublinhado desses links) */
+            font-weight: bold;
+        }
+
+        /* 
+
+        a:visited {
+            color: darkblue;         (Caso queira que apareça quando o site já foi visitado)
+        } 
+        
+        */
+
+        a:hover {
+            text-decoration: underline; /* Quando passar o mouse em cima do link, aparecera o sublinhado*/
+            color: black;
+        }
+
+        a:active {
+            color:rgb(74, 74, 107) /* Ao clicar no link, o link em que você clicou ficará azul clarinho*/
+        }
+
+        /*
+        (Caso queira que depois do link fique escrito [LINK do lado],  exemplo: Youtube [LINK])
+        a::after {  
+        
+            content: ' [link]';
+        }
+        O script acima acaba aqui*/ 
+
+        /* Pseudo-classes, uma vez : (dois pontos)
+           Pseudo-elementos duas vezes : (dois pontos)
+        */
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+        <!--Target="_blank" Ao clicar no link, ele abrirá em uma nova aba-->
+        <li><a href="https://www.instagram.com/amorimm7_" target="_blank">Instagram</a></li>
+        <!--Target="_blank" Ao clicar no link, ele abrirá em uma nova aba-->
+        <li><a href="https://br.pinterest.com/pinterestbr/" target="_blank">Pinterest</a></li>
+        <!--Target="_blank" Ao clicar no link, ele abrirá em uma nova aba-->
+    </ul>
+</body>
+</html>

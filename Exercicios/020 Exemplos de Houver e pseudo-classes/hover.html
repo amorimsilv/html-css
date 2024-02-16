@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p { /* Usado para esconder o parágrafo que está dentro do DIV*/
+            display: none;
+        }
+
+        div:hover > p { /* Depois que você esconder o parágrafo, esse comando servirá para que, ao passar o mouse em cima do texto irá aparecer o parágrafo que foi escondido. > = Filho*/
+            display: block;
+            color: blue;
+            background-color: brown;
+            width: 170px;
+        }
+
+        div:hover { /* Esse comando indica que, ao passar o mouse na div, o texto "Passe o mouse aqui" ficará Vermelho*/
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o Mouse sobre o texto abaixo</p>
+    <div>
+        Passe o Mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>Fim do Exemplo</p>
+</body>
+</html>

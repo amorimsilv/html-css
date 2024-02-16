@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /* BOX-LEVEL */ /* CASO QUEIRA MUDAR BOX PARA INLINE, USE display: inline*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+                                            /* border-width: 10px;
+                                            border-style: solid;
+                                            border-color: darkslategray;*/   /* Essa linha abaixo "16" é uma forma simplificada do codigo da linha 12 13 14*/
+
+            border: 10px solid darkslategray;
+
+                                            /* padding-top: 10px;
+                                            padding-right: 10px;
+                                            padding-bottom: 10px;
+                                            padding-left: 10px; */
+                                            /* ESSA LINHA ABAIXO "24" É UMA FORMA SIMPLIFICADA DO CODIGO DA LINHA 18 19 20 21*/
+                                            
+            padding: 10px 10px 10px 10px;   /* USADO NA ORDEM.. top, right, bottom and left*/
+                                            /* CASO TODOS OS VALORES FOREM IGUAIS (ex: 10px 10px 10px 10px) É PERMITIDO DIGITAR APENAS 1 VEZ 10px, POIS ASSIM ELE IDENTIFICARA QUE O RESTO TAMBÉM É 10 px */
+
+                                            /* margin: auto; (CENTRALIZAR A MARGEM) */
+
+                                            /* margin-top: 20px;
+                                            margin-right: 20px;
+                                            margin-bottom: 40px;
+                                            margin-left: 20px; */
+
+            margin: 20px auto 40px auto;
+
+                                            /* outline-width: 5px;
+                                            outline-style: dashed;
+                                            outline-color: salmon; */
+
+            outline: 5px dashed salmon;
+        }
+
+        a { /* inline-level */
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa Box-Level</h1> <!--H1 É BOX-LEVEL-->
+    <p>Parágrafos também são exemplos de Box-Level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p> <!--O parágrafo também é Box-Level-->
+
+
+
+
+    <!--User Agent, é sempre o navegador que está sendo exibidio o contéudo-->
+</body>
+</html>

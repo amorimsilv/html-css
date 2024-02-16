@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou aumente o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/g.png" alt="Imagem Flexivel">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Aprendendo a reproduzir Áudio em HTML5.</p>
+        <!-- Outra Maneira Melhor de Colocar Áudio-->
+    <audio preload="metadata" autoplay controls> <!--Caso queira que o Áudio fique em Loop, adicione depois de "controls" o seguinte comando, "loop"-->
+        <source src="midia/audio1.mp3" type="audio/mpeg">
+        <source src="midia/audio1.ogg" type="audio/ogg">
+        <source src="midia/audio1.wav" type="audio/wav"> <!--Não recomendado colocar arquivo wav, segundo o "Gustavo Guanabara do Canal Curso em Video, Arquivo WAV é MUITO, mais MUITO Pesado.."-->
+        <p>Infelizmente seu Navegador não consegue reproduzir Áudio. <a href="midia/audio1.mp3">Clique Aqui</a> para baixar o Arquivo .MP3
+    </audio>
+</body>
+</html>
+
+<!--MP4 M4V WEBM OGV-->

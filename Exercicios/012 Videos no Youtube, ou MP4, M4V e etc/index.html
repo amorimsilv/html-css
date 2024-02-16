@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Essse video esta hospedado no meu proprio servidor.</p>
+
+<!--Videos hospedados em local, usando a tag videos, dessa maneira abaixo, consumem muitos trafegos de dados-->
+
+    <video width="560" poster="imagem/capa.jpg" controls> <!--Poster é considerado a capa do video-->
+        <source src="midia/video.mp4" type="video/mp4">
+        <source src="midia/video.m4v" type="video/mp4">
+        <source src="midia/video.webm" type="video/webm">
+        <source src="midia/video.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de videos</p>
+    </video>
+
+<!--Videos hospedados em local, usando a tag videos, dessa maneira acima, consumem muitos trafegos de dados-->
+
+<!--SOLUÇÃO PARA ESSE PROBLEMA ABAIXO | SOLUÇÃO PARA ESSE PROBLEMA ABAIXO | SOLUÇÃO ABAIXO | SOLUÇÃO ABAIXO-->
+
+    <H1>Inserindo Videos do Youtube</H1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RQeXH6M5m3I?si=tA5JhI-e0Xu_31oY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<!--SOLUÇÃO PARA ESSE PROBLEMA ACIMA | SOLUÇÃO PARA ESSE PROBLEMA ACIMA | SOLUÇÃO ACIMA | SOLUÇÃO ACIMA-->
+
+</body>
+</html>
+
+
+<!--Necessario que você tenha o mesmo video em todos esses tipos de arquivos, colocando em ordem do, mais leve pro mais pesado-->
+
+<!--NAVEGADORES É SEUS FORMATOS COMPATIVEIS
+
+    NAVEGADOR               ARQUIVOS COMPATIVEIS
+    Microsoft Edge          .mp4 .m4v
+    Apple Safari            .mp4 .m4v
+    Google Chrome           .mp4 .m4v .webm .ogv
+    Mozilla Firefox         .webm .ogv
+    Opera                   .webm .ogv -->
+    

@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/*
+    em HTML é id = em CSS é #
+    em HTML é class = em CSS é .
+
+    Não é permitido usar ID em 2 H1
+
+    ID é Único
+    Class é Multiplus
+*/
+
+body {
+    background-color: #61669dd8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #4149a5;
+}
+
+    h1#principal {     /* o ID é usado para identificar diferentes H1 com o mesmo nome, exemplo: Caso queira mudar a cor de só 1 H1, use o # pra identificar ele como único*/
+    background-color: #61669dd8;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    color: #2b35a3;
+}
+
+.basico {       /* Tudo que for da classe básico, ficará nesta configuração a seguir.*/
+    color:white;
+    font-weight: bold;
+}
+
+.intermediario {   /* Tudo que for da classe intermediario, ficará nesta configuração a seguir.*/
+    color: rgb(212, 0, 255);
+    font-weight: bold;
+}
+
+.avancado {        /* Tudo que for da classe intermediario, ficará nesta configuração a seguir.*/
+    color: red;
+    font-weight: bold;
+}
+
+.destaque {
+    background-color: #f5f56cb0;
+}
