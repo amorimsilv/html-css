@@ -1,0 +1,243 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F9F9F9;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+header {
+    background-color: #06AA48;
+    /* background-image: linear-gradient(to bottom, red, black 200%); */ 
+    font-family: 'Poppins', sans-serif;
+    height: 85px;
+}
+
+header > h1 {
+    text-align: center;
+    padding: 14px;
+    color: white;
+}
+
+#p1 {
+    color: white;
+    text-align: center;
+    margin-top: -14px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* NAVEGAÇÃO / PAGINA INICIAL / TIMES / LIGAS / FEEDBACK / NAVEGAÇÃO / PAGINA INICIAL / TIMES / LIGAS / FEEDBACK / */
+
+#navprincipal {
+    padding: 5px;
+    background-color: #06AA48;
+}
+
+#navprincipal a {
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    font-family: 'Roboto';
+}
+
+#navprincipal a:hover {
+    color: black;
+}
+
+/* NAVEGAÇÃO / PAGINA INICIAL / TIMES / LIGAS / FEEDBACK / NAVEGAÇÃO / PAGINA INICIAL / TIMES / LIGAS / FEEDBACK / */
+
+main {
+    background-color: #F9F9F9;
+    max-width: 1366px;
+    height: 500px;
+}
+
+main article {
+    background-color: #F9F9F9;
+    max-width: 924px;
+    height: 250px;
+    margin-top: 90px;
+    margin-left: 75px;
+}
+
+main article .linhanoticias {
+    max-width: 800px;
+    margin-left: 10px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.noticias {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #06AA48;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+/* TABELA DE TIMES / TABELA DE TIMES / TABELA DE TIMES / TABELA DE TIMES / TABELA DE TIMES / TABELA DE TIMES /*/
+
+aside#tabeladetimes {
+    background-color: rgba(226, 226, 226, 0.589);
+    /* box-shadow: 3px 4px 7px 0px rgba(0, 0, 0, 0.274); */
+    box-shadow: 0px 0px 4px 0px rgb(185, 185, 185);
+    margin-left: 1000px;
+    margin-top: -170px;
+    max-width: 320px;
+    height: 450px;
+    overflow-y: scroll;
+    position: absolute;
+}
+
+.linhadatabela {
+    max-width: 287px;
+    margin-left: 5px;
+}
+
+/* TABELA DE TIMES / TABELA DE TIMES / TABELA DE TIMES / TABELA DE TIMES / TABELA DE TIMES / TABELA DE TIMES /*/
+
+/* LIGAS E TIMES / TABELA DE TIMES / LIGAS E TIMES / TABELA DE TIMES / LIGAS E TIMES / TABELA DE TIMES */
+
+                                        /* BRASILEIRAO / BRASILEIRAO / BRASILEIRAO / BRASILEIRAO / BRASILEIRAO */
+.brasileirao {
+    margin: 15px;
+    width: 45px;
+    height: 45px;
+}
+.brasileiraolink:hover {
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
+}
+.brasileiraolink img {
+    object-fit: cover;
+    transition: transform .5s ease-in-out;
+}
+.brasileiraolink:hover img {
+    transform: scale(1.1)
+}
+.brasileiraotabeladetimes {
+    text-align: center;
+    padding: 5px
+}
+.saopaulotabeladetimes {
+    margin: 10px;
+    width: 32px;
+    height: 43px;
+}
+.mengaotabeladetimes {
+    margin-bottom: 10px;
+    margin-left: -2px;
+    width: 35px;
+    height: 35px;
+}
+.palmeirastabeladetimes {
+    margin-bottom: 12px;
+    margin-left: 5px;
+    width: 35px;
+    height: 35px;
+}
+.corinthiastabeladetimes {
+    margin-bottom: 13px;
+    margin-left: 10px;
+    width: 30px;
+    height: 35px;
+}
+.cruzeirotabeladetimes {
+    margin-bottom: 14px;
+    margin-left: 5px;
+    width: 33px;
+    height: 33px;
+}
+.gremiotabeladetimes {
+    margin-bottom: 8px;
+    margin-left: -3px;
+    width: 50px;
+    height: 50px;
+}
+
+                                        /* PREMIER LEAGUE / PREMIER LEAGUE / PREMIER LEAGUE / PREMIER LEAGUE */
+.premierleague {
+    margin-top: 12px;
+    margin-left: 0px;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+}
+.premierleaguelink:hover {
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
+    
+}
+.premierleaguelink img {
+    object-fit: cover;
+    transition: transform .5s ease-in-out;
+}
+.premierleaguelink:hover img {
+    transform: scale(1.1)
+}
+
+                                        /* LA LIGA / LA LIGA / LA LIGA / LA LIGA / LA LIGA / LA LIGA */
+.laliga {
+    margin-top: 16px;
+    margin-left: 57px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
+.laligalink:hover {
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
+}
+.laligalink img {
+    object-fit: cover;
+    transition: transform .5s ease-in-out;
+}
+.laligalink:hover img {
+    transform: scale(1.1)
+}
+                                        /* LA LIGA / LA LIGA / LA LIGA / LA LIGA / LA LIGA / LA LIGA */
+
+/* LIGAS E TIMES / TABELA DE TIMES / LIGAS E TIMES / TABELA DE TIMES / LIGAS E TIMES / TABELA DE TIMES */
+
+/* ARTICLE1 / ARTICLE 1 / ARTICLE 1 / ARTICLE 1 / ARTICLE 1 / ARTICLE 1 / ARTICLE 1 / ARTICLE 1 / ARTICLE 1 */
+
+.aga1 {
+    background-color: #F9F9F9;
+    margin-left: 390px;
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#article1 {
+    margin-top: -187px;
+}
+
+#article1 a {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+#article1 a:hover {
+    color: rgb(0, 61, 0);
+}
+
+#article1 h4 {
+    margin-left: 390px;
+    margin-top: -95px;
+    padding-top: 215px;
+    font-family: 'Roboto', sans-serif;
+}
+
+figure img {
+    max-width: 370px;
+    height: 250px;
+    margin-bottom: -250px;
+}
+/* ARTICLE1 / ARTICLE 1 / ARTICLE 1 / ARTICLE 1 / ARTICLE 1 / ARTICLE 1 / ARTICLE 1 / ARTICLE 1 / ARTICLE 1 */
