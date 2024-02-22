@@ -57,6 +57,7 @@ section {
     padding-left: 30px;
     font-family: var(--fonte2), sans-serif;
     font-size: 1.5em;
+    max-width: 100%;
 }
 
 section.normal {
