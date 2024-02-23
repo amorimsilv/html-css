@@ -213,6 +213,7 @@ aside#tabeladetimes {
     margin-left: 390px;
     margin-top: 50px;
     font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
 }
 
 #article1 {
@@ -221,6 +222,7 @@ aside#tabeladetimes {
 
 #article1 a {
     text-decoration: none;
+    font-size: 1v;
     color: darkgreen;
 }
 
