@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        col.destaquenome {
+            background-color: orange;
+        }
+
+        col.destaquesexo {
+            background-color: aqua;
+        }
+
+        col.destaqueidade {
+            background-color: blueviolet;
+        }
+
+        col.destaqueprofissao {
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="destaquenome"> <!--Aplicar a configuração da class em nas colunas inteiras do "nome"-->
+            <col class="destaquesexo">
+            <col class="destaqueidade">
+            <col class="destaqueprofissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col" >Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Pedro Henrique</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Jogador de Futebol</td>
+        </tr>
+        <tr>
+            <td>Maria Eduarda</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>Sidnei Santos</td>
+            <td>M</td>
+            <td>44</td>
+            <td>Advogado</td>
+        </tr>
+        <tr>
+            <td>João Victor</td>
+            <td>M</td>
+            <td>16</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>Yohan Cruyff</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Jogador de Futebol</td>
+        </tr>
+    </table>
+</body>
+</html>
