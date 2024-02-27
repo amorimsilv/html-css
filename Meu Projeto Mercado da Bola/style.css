@@ -73,7 +73,6 @@ main article {
 main article .linhanoticias {
     max-width: 800px;
     margin-left: 10px;
-    position: relative;
     margin-bottom: 50px;
 }
 
@@ -95,7 +94,6 @@ aside#tabeladetimes {
     margin-top: -170px;
     max-width: 320px;
     height: 450px;
-    overflow-y: scroll;
     position: absolute;
 }
 
@@ -232,7 +230,7 @@ aside#tabeladetimes {
 
 #article1 h4 {
     margin-left: 390px;
-    margin-top: -95px;
+    margin-top: -180px;
     padding-top: 215px;
     font-family: 'Roboto', sans-serif;
 }
