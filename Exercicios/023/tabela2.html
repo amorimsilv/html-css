@@ -12,6 +12,15 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: darkred;
+            border: 1px 1px 1px solid black;
         }
 
         td,th {
@@ -24,8 +33,20 @@
             color: white;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: red;
+            border: 1px solid black;
+        }
+
         td.num {
-            text-align: right;
+            text-align: center;
+        }
+
+        tbody > tr:nth-child(2n) {   /* ":nth-child(2n) = De duas em duas ele como uma tarxa laranja*/
+                                     /* também em vez de 2n, é permitido colcoar ODD = impar, ou coloca 2n-1, ou também even*/
+            background-color: orange;
         }
     </style>
 </head>
@@ -34,6 +55,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -43,10 +65,13 @@
     -->
 
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 89px;">População</th>
             </tr>
         </thead>
 
@@ -115,10 +140,16 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>203 062 512</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sint fugiat sequi itaque cumque, totam temporibus modi assumenda minus voluptate quae, saepe nisi officiis corporis aperiam harum. Nobis, mollitia asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, consequatur. Ducimus suscipit id optio repudiandae sapiente. Placeat fugiat vero fugit expedita, doloremque quibusdam voluptatem nulla deserunt natus corporis quis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita sequi quibusdam qui aspernatur ducimus nihil aliquid tempore! Rerum eveniet, expedita, vitae ipsum molestiae fugiat voluptate nihil voluptatibus laudantium veritatis aliquid. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, eos? Quae doloribus, voluptates iste tenetur quam nulla architecto, non totam pariatur facere id laudantium! Ducimus velit doloremque nam similique numquam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sint fugiat sequi itaque cumque, totam temporibus modi assumenda minus voluptate quae, saepe nisi officiis corporis aperiam harum. Nobis, mollitia asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, consequatur. Ducimus suscipit id optio repudiandae sapiente. Placeat fugiat vero fugit expedita, doloremque quibusdam voluptatem nulla deserunt natus corporis quis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita sequi quibusdam qui aspernatur ducimus nihil aliquid tempore! Rerum eveniet, expedita, vitae ipsum molestiae fugiat voluptate nihil voluptatibus laudantium veritatis aliquid. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, eos? Quae doloribus, voluptates iste tenetur quam nulla architecto, non totam pariatur facere id laudantium! Ducimus velit doloremque nam similique numquam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sint fugiat sequi itaque cumque, totam temporibus modi assumenda minus voluptate quae, saepe nisi officiis corporis aperiam harum. Nobis, mollitia asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, consequatur. Ducimus suscipit id optio repudiandae sapiente. Placeat fugiat vero fugit expedita, doloremque quibusdam voluptatem nulla deserunt natus corporis quis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita sequi quibusdam qui aspernatur ducimus nihil aliquid tempore! Rerum eveniet, expedita, vitae ipsum molestiae fugiat voluptate nihil voluptatibus laudantium veritatis aliquid. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, eos? Quae doloribus, voluptates iste tenetur quam nulla architecto, non totam pariatur facere id laudantium! Ducimus velit doloremque nam similique numquam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sint fugiat sequi itaque cumque, totam temporibus modi assumenda minus voluptate quae, saepe nisi officiis corporis aperiam harum. Nobis, mollitia asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, consequatur. Ducimus suscipit id optio repudiandae sapiente. Placeat fugiat vero fugit expedita, doloremque quibusdam voluptatem nulla deserunt natus corporis quis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita sequi quibusdam qui aspernatur ducimus nihil aliquid tempore! Rerum eveniet, expedita, vitae ipsum molestiae fugiat voluptate nihil voluptatibus laudantium veritatis aliquid. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, eos? Quae doloribus, voluptates iste tenetur quam nulla architecto, non totam pariatur facere id laudantium! Ducimus velit doloremque nam similique numquam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sint fugiat sequi itaque cumque, totam temporibus modi assumenda minus voluptate quae, saepe nisi officiis corporis aperiam harum. Nobis, mollitia asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, consequatur. Ducimus suscipit id optio repudiandae sapiente. Placeat fugiat vero fugit expedita, doloremque quibusdam voluptatem nulla deserunt natus corporis quis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita sequi quibusdam qui aspernatur ducimus nihil aliquid tempore! Rerum eveniet, expedita, vitae ipsum molestiae fugiat voluptate nihil voluptatibus laudantium veritatis aliquid. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, eos? Quae doloribus, voluptates iste tenetur quam nulla architecto, non totam pariatur facere id laudantium! Ducimus velit doloremque nam similique numquam!</p>
+    
 </body>
 </html>
