@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="idmasculino" value="M">
+            <label for="idmasculino">Masculino</label><br>
+
+            <input type="radio" name="sexo" id="idfeminino" value="F">
+            <label for="idfeminino">Feminino</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esportefutebol" id="idesportefutebol"> 
+            <label for="idesportefutebol">Futebol</label><br>
+
+            <input type="checkbox" name="esportebasquete" id="idesportebasquete"> 
+            <label for="idesportebasquete">Basquete</label><br>
+
+            <input type="checkbox" name="esportemma" id="idesportemma">
+            <label for="idesportemma">MMA</label><br>
+
+            <input type="checkbox" name="esportejiujitsu" id="idesportejiujitsu"> 
+            <label for="idesportejiujitsu">Jiu-Jitsu</label><br>
+
+            <input type="checkbox" name="esportekickboxer" id="idesportekickboxer"> 
+            <label for="idesportekickboxer">Kickboxer</label><br>
+        </fieldset>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
