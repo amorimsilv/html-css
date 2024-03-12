@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="idnumber1">Number 1: </label>
+            <input type="number" name="number1" id="idnumber1" min="0" max="50" required oninput="idsoma.innerHTML = Number(idnumber1.value) + Number(idnumber2.value)">
+        </p>
+
+        <p>
+            <label for="idnumber2">Number 2: </label>
+            <input type="number" name="number2" id="idnumber2" min="0" max="50" required oninput="idsoma.innerHTML = Number(idnumber1.value) + Number(idnumber2.value)">
+        </p>
+
+        <p>
+            <label for="idsoma">Soma: </label>
+            <output name="soma" id="idsoma">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
