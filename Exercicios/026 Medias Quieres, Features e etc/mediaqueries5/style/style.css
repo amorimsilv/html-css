@@ -28,16 +28,16 @@ header > h1 {
     text-align: center;
 }
 
-#burguer {
+i#burguer {
     background-color: var(--cor3);
     color: black;
     text-align: center;
-    display: block;
+    width: 100vw;
     padding: 10px;
     cursor: pointer;
 }
 
-#burguer:hover {
+i#burguer:hover {
     background-color: var(--cor4)
 }
 
