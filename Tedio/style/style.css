@@ -8,6 +8,7 @@
 }
 
 header {
+    display: block;
     background-color: #F26800;
     width: 100vw;
     height: 12vh;
@@ -15,14 +16,51 @@ header {
 }
 
 header h1 {
+    display: block;
     color: white;
     padding-top: 10px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-weight: 900;
+    font-weight: 700;
 }
 
-@media (max-width: 600px) {
+#idbusca {
+    color: black;
+    width: 130px;
+    height: 25px;
+    margin-top: -25px;
+    margin-left: 89vw;
+    border: 2px 2px 2px #ce5a01;
+    border-radius: 10px 10px 10px;
+    display: block;
+}
+
+i#iconsearch {
+    color:white;
+    display: block;
+    padding-top: -50px;
+    margin-top: -4vh;
+    margin-left: 87vw;
+}
+
+#menu {
+    color: white;
+    display: block;
+    margin-top: -50px;
+    padding: 20px;
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 900,
+    'GRAD' 200,
+    'opsz' 48
+}
+
+
+@media (max-width: 768px) {
 
     * {
         margin: 0px;
